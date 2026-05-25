@@ -1,0 +1,66 @@
+:root {
+  --bg-base: #050508;
+  --bg-mid: #1a1a2e;
+  --bg-panel: rgba(10, 10, 18, 0.85);
+  --text-primary: #e8e8f0;
+  --text-muted: rgba(255, 255, 255, 0.4);
+  --text-faint: rgba(255, 255, 255, 0.3);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-line: rgba(255, 255, 255, 0.15);
+  --accent-3d: #8fbfff;
+  --accent-4d: #ffd166;
+  --accent-correct: #7fd17a;
+  --accent-wrong: #e57373;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", "SF Mono", Menlo, monospace;
+  --font-serif: "Fraunces", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: radial-gradient(ellipse at top, var(--bg-mid) 0%, var(--bg-base) 100%);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+button {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-line);
+  color: var(--text-primary);
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+button:disabled {
+  cursor: default;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+a {
+  color: var(--accent-3d);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-4d);
+}
