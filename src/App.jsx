@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Tesseract from './modules/Tesseract/Tesseract.jsx';
+import Penteract from './modules/Penteract/Penteract.jsx';
+import PhaseSpace from './modules/PhaseSpace/PhaseSpace.jsx';
 
 // To add a module: build the component, then add an entry here.
 const modules = [
@@ -17,16 +19,18 @@ const modules = [
     name: 'Penteract',
     subtitle: '5-cube · 32 vertices · 10 rotation planes',
     dimension: 5,
-    status: 'coming',
-    description: 'You can\'t see a 5-cube in one projection. Three different 3D shadows of the same object — find which 5D shape is consistent with all three.',
+    status: 'ready',
+    component: Penteract,
+    description: 'Ten rotation planes — seven move the shape through w and v. Mark vertices, isolate any of the 10 tesseract-cells, work the counting puzzles.',
   },
   {
     id: 'phase',
     name: 'Pendulum Phase Space',
     subtitle: 'Position × velocity · 2D state space',
     dimension: 2,
-    status: 'coming',
-    description: 'Where AP Physics meets geometry. A pendulum traces an ellipse; add damping and it spirals. The system\'s "state" lives in a space that isn\'t the room.',
+    status: 'ready',
+    component: PhaseSpace,
+    description: 'Set (θ, ω), press play, watch the orbit. Toggle damping, compare linear vs nonlinear, read energy — AP Physics as geometry.',
   },
   {
     id: 'iris',
