@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Tesseract from './modules/Tesseract/Tesseract.jsx';
 import Penteract from './modules/Penteract/Penteract.jsx';
 import PhaseSpace from './modules/PhaseSpace/PhaseSpace.jsx';
+import Iris from './modules/Iris/Iris.jsx';
 
 // To add a module: build the component, then add an entry here.
 const modules = [
@@ -37,8 +38,9 @@ const modules = [
     name: 'Iris Projection',
     subtitle: '4D data point cloud · projection rotation',
     dimension: 4,
-    status: 'coming',
-    description: 'Classic data: 150 flowers, 4 measurements each. Rotate the projection and watch the three species cluster, then merge, then re-cluster. PCA as a feeling.',
+    status: 'ready',
+    component: Iris,
+    description: '150 flowers, four measurements each. Rotate the 4D view and watch three species cluster, merge, and re-cluster.',
   },
 ];
 
